@@ -25,14 +25,27 @@
     <!-- BEGIN MAIN STYLES -->
     <link rel="stylesheet" type="text/css" href="{{secure_asset('/css/styles/common.css')}}">
     <link rel="stylesheet" type="text/css" href="{{secure_asset('/css/styles/themes/primary.css')}}">
+    <!--<link rel="stylesheet" type="text/css" href="{{secure_asset('/css/styles/themes/sidebar-black.min.css')}}">-->
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('/css/styles//widgets/help.css')}}">
     <!-- END THEME STYLES -->
 
     <!-- BEGIN PAGE LAYOUT STYLES -->
+    <style>
+        .ks-navbar .nav-item {
+            border: none;
+        }
+        .btn.btn-sm {
+            font-size: 14px;
+        }
+        .navbar {
+            align-items: start;
+        }
+    </style>
 @stack('styles')
 <!-- END PAGE LAYOUT STYLES -->
 </head>
 <!-- ks-content-solid-bg -->
-<body class="ks-navbar-fixed ks-sidebar-default ks-sidebar-position-fixed ks-theme-primary @stack('classes')">
+<body class="ks-navbar-fixed ks-sidebar-default ks-sidebar-position-fixed ks-theme-primary ks-help-wrapper @stack('classes')">
 
 @include('layouts.header')
 

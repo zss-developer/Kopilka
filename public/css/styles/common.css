@@ -8028,3 +8028,19 @@ body.ks-sidebar-compact:not(.ks-sidebar-compact-open).ks-sidebar-sections > .ks-
     color: #333333;
     font-weight: 500;
     margin-bottom: 40px; }
+
+  .auth-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    transition: all 5s linear;
+    -webkit-transition: all 5s linear;
+  }
+
+  #ks-auth-trigger:checked + .auth-dropdown{
+      display: block;
+  }
+
+  .ks-login {
+    width: 250px;
+  }

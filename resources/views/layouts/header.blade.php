@@ -9,9 +9,7 @@
         <!-- END RESPONSIVE SIDEBAR TOGGLER -->
 
         <div class="ks-navbar-logo">
-            <a href="/" class="ks-logo">{{ config('app.name', 'Laravel') }}</a>
-
-
+            <a href="{{route('home')}}" class="ks-logo">{{ config('app.name', 'Laravel') }}</a>
         </div>
     </div>
     <!-- END LOGO -->
@@ -29,11 +27,10 @@
             <div class="ks-navbar-actions">
 
 
-                @auth
-                <!-- BEGIN NAVBAR USER -->
-                    @include('layouts.sections.user')
-                <!-- END NAVBAR USER -->
-                @endauth
+            <!-- BEGIN NAVBAR USER -->
+                @include('layouts.sections.user')
+            <!-- END NAVBAR USER -->
+
 
             </div>
             <!-- END NAVBAR ACTIONS -->

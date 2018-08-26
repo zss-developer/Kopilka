@@ -1,6 +1,6 @@
 <?php
-Route::name('login')->get('login', 'Auth\LoginController@showLoginForm');
-Route::post('login', 'Auth\LoginController@login');
+
+Route::name('login')->post('login', 'Auth\LoginController@login');
 Route::name('logout')->post('logout', 'Auth\LoginController@logout');
 
 // Registration routes...

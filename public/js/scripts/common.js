@@ -1,25 +1,7 @@
 "use strict";
 
 (function($, window) {
-    /**
-     * Default overlay settings
-     */
-    $.LoadingOverlaySetup({
-        image: "img/loaders/svg-loaders/three-dots.svg",
-        /*image       : "",
-         fontawesome : "fa fa-refresh fa-spin",*/
-        zIndex: 1,
-        size: 0,
-        color: '#fff'
-    });
 
-    /**
-     * Show overlay for an entire page
-     */
-    $.LoadingOverlay("show", {
-        fade: false,
-        zIndex: 99999
-    });
 
     window.Kosmo = {
         screen: {
@@ -82,6 +64,19 @@
         var ksSettingsSlideControl = $('.ks-settings-slide-control');
         var ksSettingsSlideCloseControl = $('.ks-settings-slide-close-control');
 
+        $('#login-btn').on('click',function(e) {
+            e.preventDefault();
+           $('#ks-help-trigger').trigger('click');
+           $('#ks-auth-trigger').trigger('click');
+        });
+
+        $('#signup-btn').on('click',function(e) {
+            e.preventDefault();
+            $('#ks-auth-trigger').trigger('click');
+            $('#ks-help-trigger').trigger('click');
+        });
+
+
         /*Response.crossover('width', function() {
             if (Response.band(Kosmo.screen.breakpoints.xxl)) {
                 if (!isSidebarCompact) {
@@ -103,11 +98,6 @@
         Response.ready(function() {
             $(window).trigger('resize');
         });
-
-        setTimeout(function() {
-            $.LoadingOverlay("hide");
-            ksBody.removeClass('ks-page-loading');
-        }, 1000);
 
         // Replace default dropdown logic for sidebar
         ksSidebar.find('.dropdown-toggle').on('click', function() {

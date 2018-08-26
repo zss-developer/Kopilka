@@ -8,10 +8,6 @@
     @include('layouts.right-sidebar')
 @endpush
 
-@push('styles')
-
-@endpush
-
 @section('content')
-    index page
+    {{$section->name}}
 @endsection
