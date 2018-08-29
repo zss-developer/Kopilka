@@ -78,7 +78,20 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ru',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Locales Configuration
+    |--------------------------------------------------------------------------
+    |
+    | The application locale determines the default locale that will be used
+    | by the translation service provider. You are free to set this value
+    | to any of the locales which will be supported by the application.
+    |
+    */
+    'locales' => ['ru', 'en'],
+
 
     /*
     |--------------------------------------------------------------------------

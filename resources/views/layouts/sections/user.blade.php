@@ -1,13 +1,13 @@
 @if(auth()->check())
     <div class="nav-item dropdown ks-user">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{route('user.index')}}" role="button" aria-haspopup="true" aria-expanded="false">
-        <span class="ks-avatar {{(Auth::user()->online) ? 'ks-online' : 'ks-offline'}}">
-            <img src="{{ Auth::user()->picture }}" width="36" height="36">
-        </span>
-            <span class="ks-info">
-            <span class="ks-name">{{ Auth::user()->full_name }}</span>
-                <!-- <span class="ks-description">Premium User</span> -->
-        </span>
+            <span class="ks-avatar {{(Auth::user()->online) ? 'ks-online' : 'ks-offline'}}">
+                <img src="{{ Auth::user()->picture }}" width="36" height="36">
+            </span>
+            <span class="ks-info d-block">
+                <span class="ks-name">{{ Auth::user()->full_name }}</span>
+                    <!-- <span class="ks-description">Premium User</span> -->
+            </span>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Preview">
             <a class="dropdown-item" href="{{route('user.index')}}">
