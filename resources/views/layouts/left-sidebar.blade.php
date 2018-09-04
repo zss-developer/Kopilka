@@ -13,8 +13,8 @@
 
         </ul>
 
-        <div class="ks-sidebar-extras-block">
-            <div class="ks-sidebar-copyright">Разработка и поддержка — ЗСШ №1<br>© {{ date('Y') }}</div>
+        <div class="ks-sidebar-extras-block pt-2">
+            <div class="ks-sidebar-copyright mt-0">Разработка и поддержка — ЗСШ №1<br>© {{ date('Y') }}</div>
         </div>
     </div>
 </div>

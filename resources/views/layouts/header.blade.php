@@ -8,8 +8,7 @@
         <a href="#" class="ks-sidebar-mobile-toggle"><i class="ks-icon la la-bars" aria-hidden="true"></i></a>
         <!-- END RESPONSIVE SIDEBAR TOGGLER -->
 
-        <div class="ks-navbar-logo">
-            <a href="{{route('home')}}" class="ks-logo">{{ config('app.name', 'Laravel') }}</a>
+        <div class="ks-navbar-logo-overlay" onclick="window.location.href = '{{route('home')}}';">
         </div>
     </div>
     <!-- END LOGO -->

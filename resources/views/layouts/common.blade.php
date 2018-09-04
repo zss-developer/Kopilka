@@ -31,6 +31,7 @@
 
     <!-- BEGIN PAGE LAYOUT STYLES -->
     <style>
+
         .ks-navbar .nav-item {
             border: none;
         }
@@ -39,6 +40,44 @@
         }
         .navbar {
             align-items: start;
+        }
+        .roo-logo {
+            width: 300px;
+            height: 60px;
+            margin: 20px;
+        }
+        body.ks-navbar-fixed {
+            padding-top: 150px;
+        }
+        .ks-navbar {
+            background-color: #fefefe;
+            background-image: url(/img/banner.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 150px;
+        }
+        @media (min-width: 1600px) {
+            .ks-navbar {
+                background-size: 1340px 150px;
+            }
+        }
+        @media (max-width: 1000px) {
+            .ks-navbar {
+                background-size: 1340px 150px;
+            }
+        }
+        .ks-navbar-logo-overlay {
+            cursor: pointer;
+            width: 580px;
+            height: 70px;
+            position: absolute;
+            top: 40px;
+            left: 300px;
+            border-radius: 30px;
+        }
+        .ks-navbar-logo-overlay:hover {
+            background-color: #80a6de;
+            opacity: .15;
         }
     </style>
 @stack('styles')

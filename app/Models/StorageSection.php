@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 22.08.2018
- * Time: 22:59
- */
 
 namespace App\Models;
 
@@ -15,7 +9,7 @@ class StorageSection extends  Model
 {
     protected $table = 'storage_sections';
 
-    protected $fillable = ['code','name'];
+    protected $fillable = ['code','name', 'full_name'];
 
 
 }
